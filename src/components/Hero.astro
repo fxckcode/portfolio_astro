@@ -1,0 +1,19 @@
+---
+import ToolTip from "./ToolTip.astro";
+
+---
+
+<section class="w-full h-96 flex justify-center items-center flex-col text-left gap-5 bg-slate-900 shadow">
+        <span class="text-lg">Hola <span class="animate-pulse">👋🏻</span>, soy</span>
+        <h1 class="text-5xl font-bold mb-4">Diego Alejandro Duran</h1>
+        <div class="w-full flex justify-around items-center py-4">
+            <div class="flex gap-4 items-center" transition:name="navbar">
+                <a href="/portafolio" class="hover:scale-105" data-tooltip-target="portafolio" >Portafolio</a>
+                <a href="/contacto" class="hover:scale-105" data-tooltip-target="contacto">Contacto</a>
+                <a href="https://github.com/fxkcode" target="_blank" class="hover:scale-105">GitHub</a>
+                <a href="https://www.linkedin.com/in/diegoalejandroduran/" target="_blank" class="hover:scale-105">LinkedIn</a>
+                <!-- <ThemeIcon /> -->
+                <ToolTip />
+            </div>
+        </div>
+</section>

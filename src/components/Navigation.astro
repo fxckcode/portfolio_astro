@@ -1,0 +1,14 @@
+---
+const {inicio, portafolio, contacto} = Astro.props;
+---
+<div class="w-full flex justify-around items-center py-4">
+    <div class="flex items-center text-2xl font-bold">
+        <a href="/">Diego Duran</a>
+    </div>
+    <div class="flex gap-4 items-center">
+        <a href="/" class={`${inicio == false ? 'hidden' : ''} hover:scale-105`}>Inicio</a>
+        <a href="/portafolio" class={`${portafolio == false ? 'hidden' : ''} hover:scale-105`}>Portafolio</a>
+        <a href="/contacto" class={`${contacto == false ? 'hidden' : ''} hover:scale-105`}>Contacto</a>
+        <a href="https://github.com/fxckcode" target="_blank" class="hover:scale-105">GitHub</a>
+    </div>
+</div>

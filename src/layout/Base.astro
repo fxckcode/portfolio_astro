@@ -1,0 +1,41 @@
+---
+import { ViewTransitions } from "astro:transitions";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <ViewTransitions />
+    <title>{title}</title>
+  </head>
+  <body class="w-full h-screen">
+    <slot />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      html {
+        background-color: #1e1e2e;
+        color: #fdebf3;
+        scroll-behavior: smooth;
+      }
+
+      /* Theme Icon */
+      html.light {
+        background-color: #fdebf3;
+        color: #1e1e2e;
+      }
+    </style>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</html>

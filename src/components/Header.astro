@@ -1,0 +1,10 @@
+---
+import Navigation from "./Navigation.astro";
+const {inicio, portafolio, contacto} = Astro.props;
+---
+
+<header transition:name="navbar">
+    <nav>
+        <Navigation inicio={inicio} portafolio={portafolio} contacto={contacto} />
+    </nav>
+</header>
