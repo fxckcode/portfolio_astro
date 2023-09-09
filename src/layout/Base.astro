@@ -15,6 +15,7 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <ViewTransitions />
     <title>{title}</title>
   </head>
@@ -26,14 +27,8 @@ const { title } = Astro.props;
       }
       html {
         background-color: #1e1e2e;
-        color: #fdebf3;
+        color: #ffffff;
         scroll-behavior: smooth;
-      }
-
-      /* Theme Icon */
-      html.light {
-        background-color: #fdebf3;
-        color: #1e1e2e;
       }
     </style>
   </body>
